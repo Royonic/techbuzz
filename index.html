@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBuzz | Digital & Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="hero">
+        <h1 class="fade-in">💡 TechBuzz</h1>
+        <p class="fade-in delay">Your One-Stop Digital & Tech Solutions Hub</p>
+        <a href="#services" class="btn fade-in delay2">Explore Services</a>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-up">
+        <h2>About TechBuzz</h2>
+        <p>At TechBuzz, we combine creativity and technology to provide top-notch solutions. From designing eye-catching multimedia to optimizing devices for peak performance — we’ve got you covered.</p>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="fade-up">
+        <h2>Our Services</h2>
+        <div class="feature-grid">
+            <div class="card">
+                <h3>🎨 Digital Multimedia Solutions</h3>
+                <p>Custom-designed visuals for web, print, and branding needs.</p>
+            </div>
+            <div class="card">
+                <h3>🖌️ Banner & Poster Design</h3>
+                <p>Professional, high-quality banners and posters to make your message stand out.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Android Custom ROM Installation</h3>
+                <p>Upgrade your device with custom Android software for enhanced features and performance.</p>
+            </div>
+            <div class="card">
+                <h3>💻 Laptop & PC Performance Tuning</h3>
+                <p>Speed up your system with expert tuning and optimization services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="fade-up">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mleqykjy" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 TechBuzz | Digital & Tech Solutions | Built with ❤️ using GitHub Pages</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
